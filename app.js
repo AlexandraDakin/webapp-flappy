@@ -11,6 +11,7 @@ app.get('/', function(request, response) {
     response.sendFile(path.join(__dirname, 'pages/index.html'))
 });
 
+
 app.post('/score', function(request, response){
     var name = request.body.fullName;
     var email = request.body.email;
