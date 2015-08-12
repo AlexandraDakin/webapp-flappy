@@ -1,0 +1,72 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+    <title>HULK Jump Game</title>
+
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/style.css"/>
+</head>
+
+
+
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+    <h1>HULK Jump Game!</h1>
+    <p>Welcome to the coolest Jumping game ever!
+        Try it if you dare.</p>
+        </div>
+
+    <div id="greeting">
+        <form id="greeting-form" class="form-inline" method="post" action="/score">
+            <div class="form-group">
+
+                <label for="fullName">What's your name?</label>
+                <input type="text" id="fullName" class="form-control"
+                       name="fullName" placeholder="Bruce Banner" required>
+
+                <label for="email">What's your email?</label>
+                <input type="email" id="email" class="form-control"
+                       name="email" placeholder="bob@email.com" required>
+
+                <input type="hidden" id="score" name="score" value="0">
+
+            </div>
+            <button class="btn btn-default" type="submit">OK</button>
+        </form>
+    </div>
+           <div id="game"></div>
+
+
+        <div class="col-xs-3">
+            <h2>The highest scores are:</h2>
+            <ul id="scoreBoard">
+            </ul>
+        </div>
+    </div>
+
+
+
+
+<div class="row">
+        <div class="col-md-4">
+            <img src="../assets/screen shot 1.png" class="img-thumbnail img-responsive" />
+        </div>
+            <div class="col-md-4">
+                    <img src="../assets/hulk website.png" class="img-circle img-responsive" />
+        </div>
+            <div class="col-md-4">
+                    <img src="../assets/jump12.png" class="img-thumbnail img-responsive" />
+            </div>
+</div>
+
+</div>
+
+<script src="../lib/jquery.js"></script>
+<script src="../lib/phaser.min.js"></script>
+<script src="../js/flappy.js"></script>
+
+</body>
+
+</html>

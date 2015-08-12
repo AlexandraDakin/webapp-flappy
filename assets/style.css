@@ -1,0 +1,32 @@
+h1 {
+    color: darkgreen;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+.gold {
+    color: gold;
+}
+.silver {
+    color: #c0c0c0;
+}
+.bronze {
+    color: darkgoldenrod;
+}
+h2 {
+    color: darkgreen;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#gameLink {
+    text-align: center;
+    border: 1px solid gray;
+}
+.jumbotron {
+    color: darkgreen;
+}
+
+
+
