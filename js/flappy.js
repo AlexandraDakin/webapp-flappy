@@ -178,6 +178,7 @@ function playerJump() {
 function changeGravity(g) {
     gameGravity += g;
     player.body.gravity.y = gameGravity;
+
 }
 
 
