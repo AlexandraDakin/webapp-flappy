@@ -197,6 +197,8 @@ function update() {
 
 
 
+
+
     for(var i=light.length - 1; i >= 0; i--){
         game.physics.arcade.overlap(player,light[i], function(){
      changeGravity(-75);
