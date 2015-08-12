@@ -197,9 +197,16 @@ function update() {
 
 
 
-   // for(var i=.length - 1; i >= 0; i--){
-     //   game.physics.arcade.overlap(player,)
-    //}
+    for(var i=light.length - 1; i >= 0; i--){
+        game.physics.arcade.overlap(player,light[i], function(){
+     changeGravity(-75);
+     light[i].destroy();
+     light.splice(i,1);
+   });
+   }
+
+    //for(var i=heavy.length - 1: i >= 0; i--){
+       // game.physics.arcade.overlap(player,heavy[i], function()
 
 }
 
