@@ -201,14 +201,19 @@ function update() {
 
     for(var i=light.length - 1; i >= 0; i--){
         game.physics.arcade.overlap(player,light[i], function(){
-     changeGravity(-75);
+     changeGravity(-200);
      light[i].destroy();
      light.splice(i,1);
    });
    }
 
-    //for(var i=heavy.length - 1: i >= 0; i--){
-       // game.physics.arcade.overlap(player,heavy[i], function()
+    for(var i=heavy.length - 1; i >= 0; i--){
+        game.physics.arcade.overlap(player,heavy[i], function() {
+            changeGravity(+200);
+            heavy[i].destroy();
+            heavy.splice(i, 1);
+        });
+        }
 
 }
 
