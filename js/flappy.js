@@ -195,9 +195,9 @@ function update() {
     }
     player.rotation = Math.atan(player.body.velocity.y /gameSpeed);
 
-    for(var i=.length - 1; i >= 0; i--){
-        game.physics.arcade.overlap(player,)
-    }
+   // for(var i=.length - 1; i >= 0; i--){
+     //   game.physics.arcade.overlap(player,)
+    //}
 
 }
 
